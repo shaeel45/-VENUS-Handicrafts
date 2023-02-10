@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <title id="title-2">Products</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+    <!-- Self CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script>
+        var notindex = "navbar2";
+    </script>
+
+</head>
+
+<body>
+
+
+    <!-- spinner preloader -->
+
+    <div id="preloader">
+        <div id="status">
+            <div class="spinnner">Loading...</div>
+        </div>
+    </div>
+
+    <!-- !spinner preloader -->
+
+    <!-- header -->
+
+    <div id="navbar"></div>
+
+    <!-- !header -->
+
+    <section class="Products-section" style="margin-top: 110px;">
+        <div class="Products-top">
+            <h1 class="Products-heading"><span id="title-1">All Handicrafts</span></h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-decoration-none"><a href="index.html" class="text-decoration-none"
+                            style="color: #b3953b;">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span id="title-2">All Handicrafts</span></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row text-center py-5" id="dataload">
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+    <!-- Footer -->
+
+    <div id="footer"></div>
+
+    <!-- !Footer -->
+
+   <!-- back to top tooltip  -->
+   <button type="button" class="btn-dark btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up" style="color: #b3953b;"></i>
+</button>
+<!-- !back to top tooltip  -->
+
+
+
+</body>
+
+</html>
+
+<!-- Navbar JS -->
+<script src="assets/JS/navbar.js"></script>
+
+<!-- Footer JS -->
+<script src="assets/JS/footer.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="assets/JS/bootstrap.min.js"></script>
+
+<!-- Swiper JS Link -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+<!-- Data JS -->
+<script src="assets/JS/data.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/JS/custom.js"></script>
+
+
+<script>
+    var link = window.location.href;
+    // va
+    var url = new URL(link);
+    // console.log(url.searchParams.get('type'))
+    var id = url.searchParams.get('type');
+    if (id) {
+        document.getElementById("title-1").innerHTML=id
+        document.getElementById("title-2").innerHTML=id
+        for (var i = 0; i < carddata.length; i++) {
+            if (carddata[i].Product == id) {
+                document.querySelector("#dataload").innerHTML += `
+                <div class="products-card col-md-4">
+                    <div class="card mx-2 my-3">
+                        <div class="card-img">
+                        <img src="assets/${carddata[i].img}" class="card-img-top" alt="...">
+                    </div>
+                        <div class="card-body">
+                            <h5 class="card-title">${carddata[i].Name}</h5>
+                            <h6 class="card-text">${carddata[i].Product}</h6>
+                        </div>
+                    </div>
+                </div>`;
+            }
+        }
+    }
+    else {
+        for (var i = 0; i < carddata.length; i++) {
+            document.querySelector("#dataload").innerHTML += `
+                <div class="products-card col-md-4">
+                    <div class="card mx-2 my-3">
+                        <div class="card-img">
+                        <img src="assets/${carddata[i].img}" class="card-img-top" alt="...">
+                    </div>
+                        <div class="card-body">
+                            <h5 class="card-title">${carddata[i].Name}</h5>
+                            <h6 class="card-text">${carddata[i].Product}</h6>
+                        </div>
+                    </div>
+                </div>`;
+        }
+    }
+
+    // Scroll Color Change on NavaBar
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $(".navbar").css("background-color", "black")
+
+        }
+        else {
+            $(".navbar").css("background-color", "transparent")
+
+        }
+    });
+
+
+</script>

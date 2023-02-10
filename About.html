@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <title>About Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+
+    <!-- Self CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script>
+        var notindex = "navbar2";
+    </script>
+
+</head>
+
+<body>
+
+    <!-- spinner preloader -->
+
+    <div id="preloader">
+        <div id="status">
+            <div class="spinnner">Loading...</div>
+        </div>
+    </div>
+
+    <!-- !spinner preloader -->
+
+    <!-- header -->
+
+    <div id="navbar"></div>
+
+    <!-- !header -->
+
+    <!-- About-->
+
+    <section class="About-section" style="margin-top: 100px;">
+        <div class="About-top" style="padding-bottom: 200px;">
+            <h1 class="About-heading">About</h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-decoration-none"><a href="index.html" class="text-decoration-none"
+                            style="color: #b3953b;">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="about-top shadow p-5 bg-white" style="border-radius: 20px;">
+                <h2> <span class="welcome-word">Welcome</span> To Venus Handicrafts</h2>
+                <div class="about-img mx-auto mt-5">
+                    <img src="assets/img/welcome.jpg" class="" alt="">
+                </div>
+
+                <div class="mt-5">
+                    <p class="wel-txt">VENUS Handicrafts is a well-known certified company. Established in 1972,
+                        VENUS Handicrafts is the field of manufacturing and exporting handicrafts
+                        since more than 36 years. The products are of elegance, style and superior quality.
+                    </p>
+
+                    <p class="wel-txt">Showcasing a range, that is ethnic as well as innovative, the company has
+                        established
+                        itself as a leading name in the field of handicrafts. VENUS Handicrafts is acknowledged
+                        for its professional approach in creativity, design and exclusive products. The company
+                        understands the importance of Quality and Timely Delivery of merchandise in the competetitve
+                        and challenging International Business scenario.</p>
+
+                    <p class="wel-txt">Its dedicated team of employee & workers is par excellence, skilled and are part
+                        of
+                        executing the orders with excellent results in quality, production and shipping.
+                    </p>
+                    <p class="wel-txt">The company manufactures a wide range of products which are made by
+                        skilled Craftsmen. Artisans work hard to produce classic pieces of handicrafts
+                        as well as.
+                    </p>
+
+                    <p class="wel-txt">With the wide experience of more than 36 years - the products are
+                        distinguished in the market for their superior quality and elegant design.
+                    </p>
+
+                    <p class="wel-txt">The range of handcrafted products can also be customized - as per the design
+                        & color requirement of the customer. The design team understands that individual
+                        customers have different requirements and hence, they are open to work on customer's
+                        own design and specification.
+                    </p>
+
+                    <p class="wel-txt">There is a dedicated team of professionals in each department
+                        (such as Designing, Merchandising, Production, Compliance,
+                        Quality Control and Shipping) for taking up assignments individually
+                        & executing the task as per the buyers requirement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- !About- -->
+
+    <!-- Footer -->
+
+    <div id="footer"></div>
+
+    <!-- !Footer -->
+
+    <!-- back to top tooltip  -->
+    <button type="button" class="btn-dark btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up" style="color: #b3953b;"></i>
+    </button>
+    <!-- !back to top tooltip  -->
+
+
+</body>
+
+</html>
+
+<!-- Navbar JS -->
+<script src="assets/JS/navbar.js"></script>
+
+<!-- Footer JS -->
+<script src="assets/JS/footer.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="assets/JS/bootstrap.min.js"></script>
+
+<!-- Swiper JS Link -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/JS/custom.js"></script>
+
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 170) {
+            $(".navbar").css("background-color", "black")
+
+        }
+        else {
+            $(".navbar").css("background-color", "transparent")
+
+        }
+    });
+</script>

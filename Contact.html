@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <title>Contact Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+
+    <!-- Self CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <script>
+        var notindex = "navbar2";
+    </script>
+</head>
+
+<body>
+
+    <!-- spinner preloader -->
+
+    <div id="preloader">
+        <div id="status">
+            <div class="spinnner">Loading...</div>
+        </div>
+    </div>
+
+    <!-- !spinner preloader -->
+
+
+
+    <!-- header -->
+
+    <div id="navbar"></div>
+
+    <!-- !header -->
+
+    <section class="Contact-section" style="margin-top: 110px;">
+        <div class="Contact-top">
+            <h1 class="Contact-heading">Contact</h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-decoration-none"><a href="index.html" class="text-decoration-none"
+                            style="color: #b3953b;">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="Contact-cards">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 fs-1">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h2 class="fw-bold mb-3">Email</h2>
+                                        <a href="mailto: aptech@gmail.com">aptech@gmail.com</a><br>
+                                        <a href="mailto: aptech.edu@gmail.com">aptech.edu@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 fs-1">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h2 class="fw-bold mb-3">Phone</h2>
+                                        <a href="tel:021-34580425">021-34580425</a><br>
+                                        <a href="tel:021-34580415">021-34580415</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 fs-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h2 class="fw-bold mb-3">Address</h2>
+                                        <a href="#location">Shah Faisal Colony Flyover, Karachi City, Sindh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Contact-main">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div id="location" class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3139923421386!2d67.14963621432067!3d24.887269150313188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1669559537162!5m2!1sen!2s"
+                        width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-md-6 px-5">
+                    <h1>Send a Message</h1>
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required pattern="[A-Za-z ]{3,30}"
+                                autocomplete="off">
+                            <div class="invalid-feedback">
+                                Please enter valid Name
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="off">
+                            <div class="invalid-feedback">
+                                Please enter valid Email
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="number" class="form-control" id="phone" placeholder="03XX-XXXXXX-X" required
+                                pattern="[0-9]{4}-[0-9]{6}-[0-9]{1}" autocomplete="off">
+                            <div class="invalid-feedback">
+                                Please enter valid Phone
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" required autocomplete="off">
+                            <div class="invalid-feedback">
+                                Please enter valid Subject
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea cols="3" rows="4" class="form-control" id="message" required
+                                autocomplete="off"></textarea>
+                            <div class="invalid-feedback">
+                                Please enter valid Message
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn" type="submit">Submit</button>
+                        </div>
+                    </form>
+                    <script>
+
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <div id="footer"></div>
+
+    <!-- !Footer -->
+
+    <!-- back to top tooltip  -->
+    <button type="button" class="btn-dark btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up" style="color: #b3953b;"></i>
+    </button>
+    <!-- !back to top tooltip  -->
+
+
+
+</body>
+
+</html>
+
+<!-- Navbar JS -->
+<script src="assets/JS/navbar.js"></script>
+
+<!-- Footer JS -->
+<script src="assets/JS/footer.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="assets/JS/bootstrap.min.js"></script>
+
+<!-- Swiper JS Link -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/JS/custom.js"></script>
+
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 170) {
+            $(".navbar").css("background-color", "black")
+
+        }
+        else {
+            $(".navbar").css("background-color", "transparent")
+
+        }
+    });
+</script>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <title>Site Map</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+
+    <!-- Self CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <script>
+        var notindex = "navbar2";
+    </script>
+</head>
+
+<body>
+
+    <!-- spinner preloader -->
+
+    <div id="preloader">
+        <div id="status">
+            <div class="spinnner">Loading...</div>
+        </div>
+    </div>
+
+    <!-- !spinner preloader -->
+
+
+
+    <!-- header -->
+
+    <div id="navbar"></div>
+
+    <!-- !header -->
+
+    <section class="Contact-section" style="margin-top: 110px;">
+        <div class="Contact-top">
+            <h1 class="Contact-heading">Sitemap</h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-decoration-none"><a href="index.html" class="text-decoration-none"
+                            style="color: #b3953b;">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sitemap</li>
+                </ol>
+            </nav>
+        </div>
+
+
+        <div class="container">
+            <div class="row sitemap-custom shadow text-center">
+
+                <div class="col-md-4 g-1">
+                 <a href="Products.html?type=Iron Handicrafts" class="text-decoration-none"><button class="btn-sitemap">Iron Handicrafts</button></a>   
+                </div>
+
+                <div class="col-md-4 g-1">
+                  <a href="Products.html?type=Glass Handicrafts" class="text-decoration-none"><button class="btn-sitemap">Glass Handicrafts</button></a>
+                </div>
+
+                <div class="col-md-4 g-1">
+                  <a href="Products.html?type=Brass Handicrafts" class="text-decoration-none"><button class="btn-sitemap">Brass Handicrafts</button></a>  
+                </div>
+                
+                <div class="col-md-4 g-1">
+                  <a href="Products.html?type=Wood Handicrafts" class="text-decoration-none"><button class="btn-sitemap ">Wood Handicrafts</button></a>
+                </div>
+
+                <div class="col-md-4 g-1">
+                 <a href="Products.html?type=Aluminium Handicrafts" class="text-decoration-none"><button class="btn-sitemap">Aluminium Handicrafts</button></a>
+                </div>
+                    
+                <div class="col-md-4 g-1">
+                  <a href="Products.html?type=Handicraft Decoratives" class="text-decoration-none"><button class="btn-sitemap">Handicraft Decoratives</button></a>
+                </div>
+
+                <div class="col-md-6 g-1">
+                    <a href="Products.html?type=Home Decoratives" class="text-decoration-none"><button class="btn-sitemap">Home Decoratives</button></a>
+                </div>
+
+                <div class="col-md-6 g-1">
+                  <a href="Products.html?type=Table Accessories" class="text-decoration-none"><button class="btn-sitemap">Table Accessories</button></a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
+
+    <div id="footer"></div>
+
+    <!-- !Footer -->
+
+<!-- back to top tooltip  -->
+<button type="button" class="btn-dark btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up" style="color: #b3953b;"></i>
+</button>
+<!-- !back to top tooltip  -->
+
+
+
+</body>
+
+</html>
+
+<!-- Navbar JS -->
+<script src="assets/JS/navbar.js"></script>
+
+<!-- Footer JS -->
+<script src="assets/JS/footer.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="assets/JS/bootstrap.min.js"></script>
+
+<!-- Swiper JS Link -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/JS/custom.js"></script>
+
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 170) {
+            $(".navbar").css("background-color", "black")
+
+        }
+        else {
+            $(".navbar").css("background-color", "transparent")
+
+        }
+    });
+</script>
